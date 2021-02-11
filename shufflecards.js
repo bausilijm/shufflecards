@@ -13,7 +13,7 @@ const makeDeck = () => {
         for (let i = 2; i <= 10; i++) {
             newDeck.theCards.push(i + ' of ' + suits[a]);
         }
-        for (let i = 0; i < faces.length; i++) {
+        for (let i = 0; i <= faces.length; i++) {
             newDeck.theCards.push(faces[i] + ' of ' + suits[a]);
         }
     }
@@ -24,7 +24,6 @@ const makeDeck = () => {
 const shuffle = deck => {
     let shuffleDeck = [];
     let randomPosition;
-    let i = 0;
     console.log('Shuffling the deck.');
     for (let i = 0; i <= 51; i++) {
         randomPosition = Math.floor(Math.random() * deck.theCards.length);
